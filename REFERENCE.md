@@ -60,6 +60,7 @@ The following parameters are available in the `borg` class:
 * [`manage_package`](#manage_package)
 * [`ssh_key_type`](#ssh_key_type)
 * [`backuptime`](#backuptime)
+* [`ssh_proxyjump`](#ssh_proxyjump)
 
 ##### <a name="package_name"></a>`package_name`
 
@@ -296,4 +297,12 @@ Data type: `Hash[String[1],String[1]]`
 Configure the name of each backupjob and the time of that job.
 
 Default value: `{ 'default' => '18:30:00' }`
+
+##### <a name="ssh_proxyjump"></a>`ssh_proxyjump`
+
+Data type: `Optional[String[1]]`
+
+Configure possible bastionhosts for the connection.
+
+Default value: ``undef``
 
